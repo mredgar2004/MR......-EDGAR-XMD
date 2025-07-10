@@ -29,4 +29,4 @@ MR....EDGAR-XMD is a powerful WhatsApp Bot built using Node.js and whatsapp-web.
  # MR......-EDGAR-XMD
 
 ![IMG-20250710-WA0013](https://github.com/user-attachments/assets/21cbd2fe-0e83-43e3-8cca-bc5bcf98fc21)
-Welcome to the MR......-EDGAR-XMD wiki!
+Welcome to the MR......-EDGAR-XMD 
