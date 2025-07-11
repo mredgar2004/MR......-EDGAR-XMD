@@ -1,0 +1,142 @@
+"Mbu wana ladha miguu yao.",
+        "Tembo ni wanyama wakubwa duniani.",
+        "Penguini hawawezi kuruka lakini wanaweza kuogelea.",
+        "Kupu-kupu wana ladha kwa miguu yao.",
+        "Nyuki wana uwezo wa kuona rangi za ultraviolet."
+      ];
+      const fact = facts[Math.floor(Math.random() * facts.length)];
+      await sock.sendMessage(msg.key.remoteJid, { text: fact });
+    },
+
+    greet: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Habari, karibu kwenye bot yangu!" });
+    },
+
+    help: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tumia command hizi kwa msaada: !menu, !ping, !sticker, !owner" });
+    },
+
+    about: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Bot hii ni ya MR....EDGAR-XMD, ilitengenezwa kusaidia." });
+    },
+
+    joke: async (sock, msg) => {
+      const jokes = [
+        "Kwa nini samaki hawawezi kucheza mpira? Kwa sababu wako kwenye maji!",
+        "Nini hufanya mnyonge asikie baridi? Barafu!",
+        "Mwalimu: Taja mnyama anayeruka. Mwanafunzi: Ndege!"
+      ];
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      await sock.sendMessage(msg.key.remoteJid, { text: joke });
+    },
+
+    weather: async (sock, msg) => {await sock.sendMessage(msg.key.remoteJid, { text: "Hali ya hewa leo ni jua kali na mvua kidogo." });
+    },
+
+    quote: async (sock, msg) => {
+      const quotes = [
+        "Maisha ni safari, furahia kila hatua.",
+        "Usikate tamaa, mafanikio yako yako karibu.",
+        "Kila siku ni nafasi mpya ya kujaribu tena."
+      ];
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      await sock.sendMessage(msg.key.remoteJid, { text: quote });
+    },
+
+    time: async (sock, msg) => {
+      const now = new Date();
+      await sock.sendMessage(msg.key.remoteJid, { text: `Sasa ni saa: now.toLocaleTimeString()` );
+    ,
+
+    date: async (sock, msg) => 
+      const now = new Date();
+      await sock.sendMessage(msg.key.remoteJid,  text: `Leo ni tarehe:{now.toLocaleDateString()}` });
+    },
+
+    faq: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Maswali yanayoulizwa mara kwa mara: ... (ongeza hapa)" });
+    },
+
+    news: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Habari za leo: Hakuna habari mpya." });
+    },
+
+    translate: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tafsiri haijatekelezwa bado." });
+    },
+
+    calc: async (sock, msg) => {await sock.sendMessage(msg.key.remoteJid, { text: "Calculator haijatekelezwa bado." });
+    },
+
+    quoteoftheday: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Hii ni quote ya leo: Hakuna mpango mzuri zaidi ya kufanya kazi." });
+    },
+
+    birthday: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Happy Birthday! Tunakutakia siku njema." });
+    },
+
+    helpme: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tafadhali elezea shida yako, nitajitahidi kusaidia." });
+    },
+
+    love: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Upendo ni nguvu kubwa zaidi duniani." });
+    },
+
+    song: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Samahani, kuimba bado haijatekelezwa." });
+    },
+
+    game: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tunakubali kucheza michezo hivi karibuni." });
+    },
+
+    newsupdate: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Hakuna taarifa mpya za habari." });
+    },
+
+    fun: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Furahia bot hii na marafiki zako!" });
+    },admin: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Hii ni command ya admin tu." });
+    },
+
+    rules: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Hizi ni kanuni za kundi letu: ..." });
+    },
+
+    thanks: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Asante kwa kutumia bot yetu!" });
+    },
+
+    welcome: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Karibu kwenye kundi letu!" });
+    },
+
+    goodbye: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tutaonana tena baadaye!" });
+    },
+
+    info: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Bot hii imeundwa kusaidia watumiaji." });
+    },
+
+    support: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Kwa msaada, wasiliana na admin." });
+    },
+
+    donate: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Unaweza kusaidia kwa kutoa mchango." });
+    },
+
+    faq2: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Maswali yanayoulizwa mara kwa mara sehemu 2." });
+    },
+
+    challenge: async (sock, msg) => {
+celebrate: async (sock, msg) => {
+      await sock.sendMessage(msg.key.remoteJid, { text: "Tunasherehekea siku hii pamoja." });
+    },
+
+    bye: async (sock, msg)
