@@ -1,0 +1,21 @@
+```js
+module.exports = {
+  command: "menu",
+  run: async (sock, msg) => {
+    const menu = `
+╭━━〔 *Menu List* 〕━━┈⊷
+┃◈ 1️⃣  📥 *Download Menu*
+┃◈ 2️⃣  👥 *Group Menu*
+┃◈ 3️⃣  😄 *Fun Menu*
+┃◈ 4️⃣  👑 *Owner Menu*
+┃◈ 5️⃣  🤖 *AI Menu*
+┃◈ 6️⃣  🎎 *Anime Menu*
+┃◈ 7️⃣  🔄 *Convert Menu*
+┃◈ 8️⃣  📌 *Other Menu*
+┃◈ 9️⃣  💞 *Reactions Menu*
+┃◈ 🔟  🏠 *Main Menu*
+╰──────────────┈⊷`;
+    
+    await sock.sendMessage(msg.key.remoteJid, { text: menu });
+  }
+};
