@@ -1,0 +1,23 @@
+```json
+{
+  "name": "mr-edgar-xmd",
+  "version": "1.0.0",
+  "description": "Simple WhatsApp Bot by MR....EDGAR-XMD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "mr-edgar",
+    "xmd"
+  ],
+  "author": "MR....EDGAR-XMD",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.22.1"
+  }
+}
+```
