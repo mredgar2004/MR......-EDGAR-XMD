@@ -1,0 +1,8 @@
+```js
+module.exports = {
+  ownerNumber: "255625501821",
+  botName: "MR...EDGAR-XMD",
+  prefix: "!",
+  sessionPath: "./sessions/auth_info.json"
+}
+```
