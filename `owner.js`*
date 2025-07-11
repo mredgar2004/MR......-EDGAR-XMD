@@ -1,0 +1,10 @@
+```js
+module.exports = {
+  command: "owner",
+  run: async (sock, msg) => {
+    await sock.sendMessage(msg.key.remoteJid, {
+      text: "👑 Huyu ni MR....EDGAR-XMD\n📞 Simu: +255625501821"
+    });
+  }
+};
+```￼Enter
