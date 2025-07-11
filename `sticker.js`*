@@ -1,0 +1,13 @@
+```js
+module.exports = {
+  command: "sticker",
+  run: async (sock, msg) => {
+    const mediaMsg = msg.message.imageMessage || msg.message.videoMessage;
+    if (!mediaMsg) {
+      return await sock.sendMessage(msg.key.remoteJid, { text: "📌 Tuma picha au video (chini ya sekunde 10) na andika !sticker" });
+    }
+
+    const buffer = await sock.downloadMediaMessage(msg);
+    await sock.sendMessage(msg.key.remoteJid, { sticker: buffer });
+  }
+};
