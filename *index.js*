@@ -1,0 +1,25 @@
+```js
+const { default: makeWASocket, useSingleFileAuthState } = require("@adiwajshing/baileys");
+const { Boom } = require("@hapi/boom");
+const qrcode = require("qrcode-terminal");
+const handler = require("./lib/handler");
+const config = require("./config");
+
+const { state, saveState } = useSingleFileAuthState("./sessions/auth_info.json");
+
+async function startSock() {
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: true,
+    defaultQueryTimeoutMs: undefined,
+    version: [2, 2323, 4],
+  });
+
+  sock.ev.on("creds.update", saveState);
+  sock.ev.on("messages.upsert", async (m) => {
+    await handler(sock, m);
+  });
+}
+
+startSock();
+```
