@@ -1,0 +1,43 @@
+```js
+const fs = require("fs");
+const path = require("path");
+const config = require("../config");
+
+const pluginsPath = path.join(__dirname, "../plugins");
+
+let plugins = {};
+
+// Load plugins automatically
+fs.readdirSync(pluginsPath).forEach((file) => {
+  if (file.endsWith(".js")) {
+    const plugin = require(path.join(pluginsPath, file));
+    plugins[plugin.command] = plugin.run;
+  }
+});
+
+module.exports = async (sock, m) => {
+  try {
+    const msg = m.messages[0];
+    if (!msg.message || msg.key.fromMe) return;
+
+    const body =
+      msg.message.conversation ||
+      msg.message.extendedTextMessage?.text ||
+      "";
+
+    if (!body.startsWith(config.prefix)) return;
+
+    const command = body.slice(1).trim().split(" ")[0].toLowerCase();
+
+    if (plugins[command]) {
+      await plugins[command](sock, msg);
+    } else {
+      await sock.sendMessage(msg.key.remoteJid, {
+        text: "❌ Unknown command.",
+      });
+    }
+  } catch (err) {
+    console.error("Handler error:", err);
+  }
+};
+```￼Enter
