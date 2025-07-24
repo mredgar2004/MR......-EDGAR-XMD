@@ -22,21 +22,14 @@ Click the button below to fork the Knight Bot repository to your GitHub account:
 
 ---
 
-### Step 2: Get Pair Code
+### 🔹 Step 2: Generate Session ID
+You need a session to connect your bot. Choose your preferred method:
 
-Deploy the bot and easily connect it to your WhatsApp account by pair code. Click the button below to deploy the bot on Replit.
+[![Scan QR Code](https://img.shields.io/badge/SCAN_QR-FF6347?style=for-the-badge&logo=qr-code&logoColor=white)](https://dmlactive.onrender.com/qr) 
 
-<div align="center">
-  <a href="https://replit.com/@DGXeon/Xeon-PairCode?v=1" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Replit-success?style=for-the-badge" alt="Deploy on Replit"/>
-  </a>
-</div>
+[![Pair Device](https://img.shields.io/badge/GET_PAIR_CODE-1BAFBA?style=for-the-badge&logo=connectdevelop&logoColor=white)](https://dmlactive.onrender.com/)
 
-<div align="center">
-  <a href="https://knight-bot-paircode.onrender.com" target="_blank">
-    <img src="https://img.shields.io/badge/GET%20PAIR%20CODE-Easy%20Method-ff4d4d?style=for-the-badge" alt="Generate Pair Code"/>
-  </a>
-</div>
+---
 
 
 ### After getting creds.json file, upload it to session folder
