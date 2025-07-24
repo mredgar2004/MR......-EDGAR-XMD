@@ -22,20 +22,17 @@ Click the button below to fork the Knight Bot repository to your GitHub account:
 
 ---
 
-### 🔹 Step 2: Generate Session ID
-You need a session to connect your bot. Choose your preferred method:
+###🔹 Step 2: Generate Session ID for MR....EDGAR-XMD  
 
-[![Scan QR Code](https://img.shields.io/badge/SCAN_QR-FF6347?style=for-the-badge&logo=qr-code&logoColor=white)](https://dmlactive.onrender.com/qr) 
+To connect your bot *MR....EDGAR-XMD*, choose one of the following methods to generate a session:
 
-[![Pair Device](https://img.shields.io/badge/GET_PAIR_CODE-1BAFBA?style=for-the-badge&logo=connectdevelop&logoColor=white)](https://dmlactive.onrender.com/)
+[![Scan QR Code](https://img.shields.io/badge/SCAN_QR-FF6347?style=for-the-badge&logo=qr-code&logoColor=white)](https://dmlactive.onrender.com/qr)  
 
----
-
-
-### After getting creds.json file, upload it to session folder
+[![Get Pair Code](https://img.shields.io/badge/GET_PAIR_CODE-1BAFBA?style=for-the-badge&logo=connectdevelop&logoColor=white)](https://dmlactive.onrender.com/)
 
 ---
 
+✅ Once you scan the QR Code or enter the Pair Code, your bot MR....EDGAR-XMD will be connected successfully and ready to operate.
 ### Step 3: Deploy Now
 
 For further customization and setup guidance, click the button below:
