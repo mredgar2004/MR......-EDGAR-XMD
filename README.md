@@ -3,7 +3,10 @@
 This is a WhatsApp bot built using the Baileys library for group management, including featuresging all members, muting/unmuting, and many more. It's designed to h# 🤖 
 MR..EDGAR 
 This is a WhatsApp bot built Botusing the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It's designed to help admins efficiently manage WhatsApp groups.
+<div align="center"> 
+  <a href="https://git.io/typing-svg"> 
 ![IMG-20250710-WA0013](https://github.com/user-attachments/assets/21cbd2fe-0e83-43e3-8cca-bc5bcf98fc21)
+Bot;Multi+Device+Whatsapp+Bot;Coded+By+MR...EDGAR-XMD" alt="Typing SVG" />
 Welcome to the MR......-EDGAR-XMD
 
 ---
